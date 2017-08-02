@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li><a [routerLink]="['Home']">Home</a></li>
+      <li><a [routerLink]="['profile']">Profile</a></li>
+      <li><a [routerLink]="['messages']">Messages</a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+<div>
+  <input [(ngModel)]="name">
+  <br/>
+  <h1> {{name}}</h1>
+</div>
+
+<br>
+<select [(ngModel)]="num">
+  <option value="One">One</option>
+  <option value="Two">Two</option>
+  <option value="Three">Three</option>
+</select>
+
+<div>
+  <h1>{{num}}</h1>
+</div>
